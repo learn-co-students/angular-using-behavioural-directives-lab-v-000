@@ -1,13 +1,22 @@
 function ContactController() {
     this.contacts = [{
         name: 'Bob',
-        phone: '0123458690'
+        phone: '0123458690',
+        hobby: '',
+        favoriteFood: '',
+        nickname: ''
     },{
         name: 'Tim',
-        phone: '3934203242'
+        phone: '3934203242',
+        hobby: '',
+        favoriteFood: '',
+        nickname: ''
     },{
         name: 'Ross',
-        phone: '0684059433'
+        phone: '0684059433',
+        hobby: '',
+        favoriteFood: '',
+        nickname: ''
     }];
 
     this.addContact = function () {
