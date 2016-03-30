@@ -10,10 +10,10 @@ function ContactController() {
         phone: '0684059433'
     }];
 
-    this.addContact = function () {
+    this.addContact = function (name, phone) {
         this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
+            name: name,
+            phone: phone
         });
     }
 }
