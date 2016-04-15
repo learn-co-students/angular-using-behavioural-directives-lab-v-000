@@ -10,12 +10,15 @@ function ContactController() {
         phone: '0684059433'
     }];
 
+
     this.addContact = function () {
-        this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
-        });
-    }
+         this.contacts.push({
+            name: this.name,
+            phone: this.phone
+         });
+     }
+ 
+
 }
 
 angular
