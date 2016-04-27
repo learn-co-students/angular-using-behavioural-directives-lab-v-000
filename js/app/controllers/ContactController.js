@@ -1,5 +1,6 @@
 function ContactController() {
-    this.contacts = [{
+    var ctrl = this;
+    ctrl.contacts = [{
         name: 'Bob',
         phone: '0123458690'
     },{
@@ -10,10 +11,10 @@ function ContactController() {
         phone: '0684059433'
     }];
 
-    this.addContact = function () {
-        this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
+    ctrl.addContact = function () {
+        ctrl.contacts.push({
+            name: ctrl.name,
+            phone: ctrl.phone
         });
     }
 }
