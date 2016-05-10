@@ -17,6 +17,11 @@
                 </li>
             </ul>
             
+            <h4>New Contact</h4>
+            <u>Name</u>  {{vm.newContactName}}<br>
+            <u>Phone</u>    {{vm.newContactPhone}}<br>
+            <br>
+
             <input ng-model="vm.newContactName" type="text" placeholder="Name">
             <input ng-model="vm.newContactPhone" type="text" placeholder="Phone">
             <button ng-click="vm.addContact()">Add a New Contact</button>
