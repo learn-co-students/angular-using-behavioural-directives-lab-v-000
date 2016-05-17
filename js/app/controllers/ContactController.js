@@ -1,7 +1,7 @@
 function ContactController() {
     this.contacts = [{
         name: 'Bob',
-        phone: '0123458690'
+        phone: '0123493330'
     },{
         name: 'Tim',
         phone: '3934203242'
@@ -11,7 +11,7 @@ function ContactController() {
     }];
 
     this.addContact = function () {
-        this.contacts.push({
+            this.contacts.push({
             name: 'New Contact',
             phone: 'Phone Number'
         });
