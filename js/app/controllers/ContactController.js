@@ -1,7 +1,7 @@
 function ContactController() {
     this.contacts = [{
         name: 'Bob',
-        phone: '0123490'
+        phone: '0123493330'
     },{
         name: 'Tim',
         phone: '3934203242'
