@@ -10,10 +10,11 @@
 
     <div ng-app="app">
         <div ng-controller="ContactController as vm">
+          <button ng-click="addContact">Add Contact</button>
             <ul>
-                <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
+                <li ng-repeat="person in vm.contacts">
+                  <input ng-model="person.name">Contact Name {{ person.name }}</input><br>
+                  <input ng-model="person.phone">Phone Number {{ person.phone }}</input><br>
                 </li>
             </ul>
         </div>
