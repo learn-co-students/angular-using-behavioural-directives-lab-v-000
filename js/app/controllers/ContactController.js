@@ -10,10 +10,15 @@ function ContactController() {
         phone: '0684059433'
     }];
 
+    //create new variables to get new contact name/phone
+    this.newName = "Type new name...";
+    this.newPhone = "Type new phone...";
+
     this.addContact = function () {
         this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
+            //set values to property values above
+            name: this.newName,
+            phone: this.newPhone
         });
     }
 }
