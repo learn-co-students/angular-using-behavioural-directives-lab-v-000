@@ -11,9 +11,9 @@
     <div ng-app="app">
         <div ng-controller="ContactController as vm">
             <ul>
-                <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
+                <li ng-repeat="contacts in vm.contact">
+                    <h4>{{ contacts.name }}</h4>
+                    <h6>{{ contacts.phone }}</h6>
                 </li>
             </ul>
         </div>
