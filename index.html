@@ -15,6 +15,16 @@
                     <h4>Contact Name</h4>
                     <h6>Phone Number</h6>
                 </li>
+                <div ng-repeat="contact in vm.contacts">
+                    <li>
+                        <h4>{{contact.name}}</h4>
+                        <h6>{{contact.phone}}</h6>
+                    </li>
+                </div>
+
+                <input ng-model="vm.name" placeholder="name" />
+                <input ng-model="vm.phone" placeholder="phone" />
+                <button ng-click="vm.addContact()">add contact</button>
             </ul>
         </div>
     </div>
