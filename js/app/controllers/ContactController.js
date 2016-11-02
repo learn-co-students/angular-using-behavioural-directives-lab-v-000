@@ -1,5 +1,9 @@
 function ContactController() {
-    this.contacts = [{
+    var vm = this;
+
+    vm.newContact = {};
+
+    vm.contacts = [{
         name: 'Bob',
         phone: '0123458690'
     },{
@@ -10,11 +14,8 @@ function ContactController() {
         phone: '0684059433'
     }];
 
-    this.addContact = function () {
-        this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
-        });
+    vm.addContact = function () {
+        this.contacts.push(vm.newContact);
     }
 }
 

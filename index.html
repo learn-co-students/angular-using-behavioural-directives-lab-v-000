@@ -10,12 +10,22 @@
 
     <div ng-app="app">
         <div ng-controller="ContactController as vm">
-            <ul>
-                <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
-                </li>
-            </ul>
+
+            <div ng-repeat="contact in vm.contacts | orderBy: '$index'">
+                <ul>
+                    <li>
+                        <h4>{{ contact.name }}</h4>
+                        <h6>{{ contact.phone }}</h6>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- add contact -->
+            <input placeholder="contact name" ng-model="vm.newContact.name"></input>
+            <input placeholder="contact phone" ng-model="vm.newContact.phone"></input>
+
+            <button ng-click="vm.addContact()">Add Contact</button>
+
         </div>
     </div>
 
