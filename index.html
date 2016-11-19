@@ -10,10 +10,10 @@
 
     <div ng-app="app">
         <div ng-controller="ContactController as vm">
-            <ul>
+            <ul ng-repeat="contact in vm.contacts">
                 <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
+                    <h4>Contact Name {{ contact.name }}</h4>
+                    <h6>Phone Number {{ contact.phone }}</h6>
                 </li>
             </ul>
         </div>
