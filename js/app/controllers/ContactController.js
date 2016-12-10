@@ -11,10 +11,16 @@ function ContactController() {
     }];
 
     this.addContact = function () {
+
         this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
+            name: this.contact.name,
+            phone: this.contact.phone
         });
+        this.reset();
+    }
+
+    this.reset = function () {
+      
     }
 }
 
