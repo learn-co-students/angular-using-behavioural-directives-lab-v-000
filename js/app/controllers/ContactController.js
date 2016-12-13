@@ -1,9 +1,4 @@
 function ContactController() {
-    this.contact = {
-      name: '',
-      phone: ''
-    }
-
     this.contacts = [{
         name: 'Bob',
         phone: '0123458690'
@@ -16,12 +11,12 @@ function ContactController() {
     }];
 
     this.addContact = function () {
-        this.contacts.push(this.contact);
+        this.contacts.push({
+            name: '',
+            phone: ''
+        });
     }
 
-    this.reset = function() {
-      this.contact = {};
-    }
 }
 
 angular
