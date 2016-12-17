@@ -1,4 +1,5 @@
 function ContactController() {
+  var vm = this;
     this.contacts = [{
         name: 'Bob',
         phone: '0123458690'
