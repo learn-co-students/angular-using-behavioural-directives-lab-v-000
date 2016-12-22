@@ -1,19 +1,28 @@
 function ContactController() {
-    this.contacts = [{
-        name: 'Bob',
-        phone: '0123458690'
-    },{
-        name: 'Tim',
-        phone: '3934203242'
-    },{
-        name: 'Ross',
-        phone: '0684059433'
-    }];
+
+  var vm = this;
+
+  vm.list = {
+    contacts: [
+        {
+            name: 'Bob',
+            phone: '0123458690'
+        },
+        {
+            name: 'Tim',
+            phone: '3934203242'
+        },
+        {
+            name: 'Ross',
+            phone: '0684059433'
+        }
+      ]
+    }
 
     this.addContact = function () {
-        this.contacts.push({
-            name: 'New Contact',
-            phone: 'Phone Number'
+        vm.list.contacts.push({
+            name: vm.currentContact.name,
+            phone: vm.currentContact.phone
         });
     }
 }
