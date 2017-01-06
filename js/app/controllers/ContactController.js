@@ -16,6 +16,10 @@ function ContactController() {
             phone: 'Phone Number'
         });
     }
+
+    this.removeContact = function () {
+      this.contacts.splice(-1)
+    }
 }
 
 angular
