@@ -1,7 +1,12 @@
 {
    "name": "angular",
    "version": "1.0.0",
+   "scripts": {
+   		"live": "live-server",
+   		"start": "npm run live"
+   	},
    "devDependencies": {
-     "express": "^4.13.4"
+     "express": "^4.13.4",
+     "live-server": "^0.9.2"
    }
 }
