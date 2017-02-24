@@ -8,12 +8,22 @@
 </head>
 <body>
 
+    <h1>Welcome</h1>
     <div ng-app="app">
         <div ng-controller="ContactController as vm">
+            <div>
+                <input ng-model="vm.currentTask.name" placeholder="Name">
+                <input ng-model="vm.currentTask.phone" placeholder="Phone">
+                <button ng-click="vm.addContact()">Add</button>
+            </div>            
             <ul>
                 <li>
-                    <h4>Contact Name</h4>
-                    <h6>Phone Number</h6>
+                    <h4>{{ vm.currentTask.name }}</h4>
+                    <h6>{{ vm.currentTask.phone }}</h6>
+                </li>
+                <li ng-repeat="contact in vm.contacts">
+                    <h4>{{ contact.name }}</h4>
+                    <h6>{{ contact.phone }}</h6>
                 </li>
             </ul>
         </div>
